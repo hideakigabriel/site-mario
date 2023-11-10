@@ -3,6 +3,7 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: space-evenly;
+  font-family: Poppins;
 }
 
 .logo-mario {
@@ -44,7 +45,6 @@ p {
   color: #fff;
   margin-top: 10px;
   font-size: 24px;
-  font-family: Poppins;
 }
 
 button {
@@ -57,5 +57,35 @@ button {
   font-size: 16px;
   margin-top: 12px;
   cursor: pointer;
-  font-family: Poppins;
+}
+
+.fale-conosco {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 12px;
+  gap: 20px;
+}
+
+.fale-conosco > spam{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input {
+  height: 40px;
+  border-radius: 6px;
+  border: solid 1px gray;
+  padding-left: 10px;
+  outline-color: chartreuse;
+}
+
+textarea {
+  height: 90px;
+  width: 300px;
+  border-radius: 6px;
+  border: solid 1px gray;
+  padding: 10px;
+  outline-color: chartreuse;
 }
