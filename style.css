@@ -66,6 +66,10 @@ button {
   padding: 20px;
   border-radius: 12px;
   gap: 20px;
+  position: fixed;
+  left: -320px;
+  transition: left 300ms linear;
+  z-index: 4;
 }
 
 .fale-conosco > spam{
@@ -88,4 +92,15 @@ textarea {
   border: solid 1px gray;
   padding: 10px;
   outline-color: chartreuse;
+}
+
+.mascara-form {
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: 6000ms linear;
 }

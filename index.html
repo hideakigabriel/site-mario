@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
 
     <title>Super Mario</title>
   </head>
   <body>
     <div class="caixa-video-mario">
       <video src="video.mp4" autoplay muted loop></video>
-        <div class="mascara-video"></div>
+      <div class="mascara-video"></div>
     </div>
     <div class="caixa-principal">
       <img class="logo-mario" src="/logo.png" alt="Logo Super Mario" />
@@ -23,17 +24,39 @@
         Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos
         - Mario e Luigi!
       </p>
-      <button>Fale conosco</button>
+      <button onclick="showForm()">Fale conosco</button>
     </div>
 
     <img class="imagem-mario-luigi" src="/mario.png" alt="Mario e Luigi" />
 
-    <form class="fale-conosco" action="">
+    <form class="fale-conosco">
       <spam>Fale Conosco</spam>
-      <input placeholder="Seu nome" type="text" name="" id="">
-      <input placeholder="Seu telefone" type="tel" name="" id="">
-      <textarea placeholder="Digite seu problema aqui" id="" cols="30" rows="10"></textarea>
-      <button>Enviar</button>
+      <input placeholder="Seu nome" type="text" name="" id="" />
+      <input placeholder="Seu telefone" type="tel" name="" id="" />
+      <textarea
+        placeholder="Digite seu problema aqui"
+        id=""
+        cols="30"
+        rows="10"
+      ></textarea>
+      <button onclick="hideForm()">Enviar</button>
     </form>
+    <div class="mascara-form"></div>
   </body>
+  <script>
+    const formulario = document.querySelector(".fale-conosco");
+    const mascara = document.querySelector(".mascara-form")
+
+    console.log(formulario)
+
+    function showForm() {
+      formulario.style.left = "40%"
+      mascara.style.visibility = "visible"
+    } 
+    
+    function hideForm() {
+      formulario.style.left = "-320px"
+      mascara.style.visibility = "hidden"
+    }
+  </script>
 </html>
